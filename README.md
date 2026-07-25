@@ -4,7 +4,7 @@ A 65% Keyboard with a rotary encoder, OLED screen and LEDs
 
 ## Journal
 You can visit the `./Photos` folder to find pictures related to each devlog!  
-### Devlog 1:
+### Devlog 1: 3 hours
 Behold, the start of the project!
 I do not have much experiance making keyboards but have been thinking of building one for a lil bit now, and once I came across Keeb it seemed like a great opportunity!  
 I kicked this project off with a bit of planning and I present to you the overview of my custom keyboard:  
