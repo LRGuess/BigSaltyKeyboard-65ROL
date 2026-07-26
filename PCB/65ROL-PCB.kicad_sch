@@ -1308,12 +1308,12 @@
 		(uuid "2da9ae39-40c0-4048-aac9-97ac80f124f5")
 	)
 	(no_connect
-		(at 148.59 74.93)
-		(uuid "45a06106-ebda-43a0-aaf3-96e7d6e555d5")
-	)
-	(no_connect
 		(at 102.87 57.15)
 		(uuid "5b99030e-7f35-437c-b349-df2d00b99691")
+	)
+	(no_connect
+		(at 102.87 100.33)
+		(uuid "75ca8b38-4ee9-4850-98b5-8fa2c6d5e19b")
 	)
 	(no_connect
 		(at 102.87 54.61)
@@ -1348,7 +1348,7 @@
 		(uuid "f7df8653-0093-47dc-8b6b-baf77527557d")
 	)
 	(label "R4"
-		(at 102.87 110.49 0)
+		(at 102.87 113.03 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1358,7 +1358,7 @@
 		(uuid "1586d05a-8b55-4cac-a007-5e694fc4f96b")
 	)
 	(label "R3"
-		(at 102.87 107.95 0)
+		(at 102.87 110.49 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1367,8 +1367,18 @@
 		)
 		(uuid "46115c8e-8c67-4cff-915d-1dd86c19c102")
 	)
+	(label "R0"
+		(at 148.59 64.77 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4a73e758-559c-41db-ac85-5ff2091a8157")
+	)
 	(label "R4"
-		(at 148.59 72.39 0)
+		(at 148.59 74.93 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1378,7 +1388,7 @@
 		(uuid "4d21e415-2bda-4253-bfc6-1fccbb71e421")
 	)
 	(label "R1"
-		(at 148.59 64.77 0)
+		(at 148.59 67.31 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1387,8 +1397,18 @@
 		)
 		(uuid "4d4b6a93-d35c-4adb-ba02-d5ace709e878")
 	)
+	(label "R0"
+		(at 102.87 102.87 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "55c366b8-c4bb-40b1-89e6-7f63cabd1b69")
+	)
 	(label "R2"
-		(at 148.59 67.31 0)
+		(at 148.59 69.85 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1398,7 +1418,7 @@
 		(uuid "a554d4e0-e1da-41ea-8e42-1234f0aa5272")
 	)
 	(label "R1"
-		(at 102.87 102.87 0)
+		(at 102.87 105.41 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1408,7 +1428,7 @@
 		(uuid "a875dcde-6f05-4481-be3e-aa741da158ae")
 	)
 	(label "R2"
-		(at 102.87 105.41 0)
+		(at 102.87 107.95 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1418,7 +1438,7 @@
 		(uuid "a891963a-8604-4b95-9545-7e0efd8d7d4a")
 	)
 	(label "R3"
-		(at 148.59 69.85 0)
+		(at 148.59 72.39 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1779,7 +1799,7 @@
 	)
 	(sheet
 		(at 90.17 59.69)
-		(size 12.7 52.07)
+		(size 12.7 58.42)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -1805,7 +1825,7 @@
 			)
 		)
 		(property "Sheetfile" "BoardKeys.kicad_sch"
-			(at 90.17 112.3446 0)
+			(at 90.17 118.6946 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1966,7 +1986,7 @@
 			)
 		)
 		(pin "ROW0" input
-			(at 102.87 100.33 0)
+			(at 102.87 102.87 0)
 			(uuid "e63f012b-28a2-4447-90e6-807a81dca811")
 			(effects
 				(font
@@ -1976,7 +1996,7 @@
 			)
 		)
 		(pin "ROW1" input
-			(at 102.87 102.87 0)
+			(at 102.87 105.41 0)
 			(uuid "61927458-91d4-45f7-8a70-061082662141")
 			(effects
 				(font
@@ -1986,7 +2006,7 @@
 			)
 		)
 		(pin "ROW2" input
-			(at 102.87 105.41 0)
+			(at 102.87 107.95 0)
 			(uuid "70926154-314a-4ee1-bc73-6b018fffbc32")
 			(effects
 				(font
@@ -1996,7 +2016,7 @@
 			)
 		)
 		(pin "ROW3" input
-			(at 102.87 107.95 0)
+			(at 102.87 110.49 0)
 			(uuid "527d9227-ed9f-4b84-816a-254e4486dbf8")
 			(effects
 				(font
@@ -2006,7 +2026,7 @@
 			)
 		)
 		(pin "ROW4" input
-			(at 102.87 110.49 0)
+			(at 102.87 113.03 0)
 			(uuid "a6320119-c924-41f6-b220-6c537b6ecac9")
 			(effects
 				(font
