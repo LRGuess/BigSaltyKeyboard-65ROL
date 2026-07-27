@@ -39,3 +39,17 @@ Next Up:
      alt="Devlog2 Image"
      width="600"
      height="500"> 
+
+### Devlog 3: 4 hours
+Right off the bat this part took a lot longer than I thought it would. Manually trying to drag every single diode to the right position was an absolute nightmare they're so small it's literally aim trainging of some sorts. Holy cow. 
+Anyways, after placing every diode I decided to place the Pico right above the entire structure. Yes this adds a lot of space but that space will be right under the extention and I do need a spot to place the connectors to the other PDB. I'll get into that more in the next devlog.
+The last thing I did was define the board's outlines and add a ground fill. I'm leaving about 2.4mm of space between the edge of the board and the switches, which I think will be enough for a sandwitch fit case. Running the DRC nothing failed so all is well with the board for now!
+
+Next Up:
+1. LEDs
+2. Plan 2nd board connection
+
+<img src="https://github.com/LRGuess/BigSaltyKeyboard-65ROL/blob/main/Photos/Devlog3-Board.png" 
+     alt="Devlog3 Image"
+     width="600"
+     height="500"> 
