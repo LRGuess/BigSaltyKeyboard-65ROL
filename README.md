@@ -21,3 +21,21 @@ I begun the project by starting the schematic for the PCB in KiCad! For now all 
 Next Up:
 1. Link footprints and but together PCB with keys
 2. LEDs
+
+<img src="https://github.com/LRGuess/BigSaltyKeyboard-65ROL/blob/main/Photos/Devlog1-Schematic.png" 
+     alt="Devlog1 Image"
+     width="600"
+     height="500"> 
+
+### Devlog 2: 3 hours
+After having finished the key's schematic layout for the base PCB I dedcided the next step was to lay the keys out on the PCB! My current keyboard is an ATK RS6, and I'm quite used to it's layout and spacing so I decided I would replicate it with a small tweak: I made the left control key just a little bit larger so that I don't have to extend my thumb as far as I do on my current one. Honestly, spacing the keys out was kinda hard but it was a great learning opportunity, and figuring out how to place the stabalizers was also fun to figure out.  
+Something I did to help figure the proper spacing out was downloading the CAD for an MX key and a keycap for the switch footprint so I could visualize the spacing in the 3D tool! At first I got the switch CAD to import no problem, but as soon as I tried to import the keycap it wouldn't show up. Long story short, for some ungodly reason KiCAD didn't like the keycap's CAD to be in an STL format but after a conversion to STP everything went smoothly. 
+
+Next Up:
+1. Place diodes, Pico, and define board edge.
+2. LEDs
+
+<img src="https://github.com/LRGuess/BigSaltyKeyboard-65ROL/blob/main/Photos/Devlog2-PCB%20KeyLayout.png" 
+     alt="Devlog2 Image"
+     width="600"
+     height="500"> 
