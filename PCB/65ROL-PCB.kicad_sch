@@ -1336,16 +1336,42 @@
 		(uuid "dfbe6b30-45a4-417e-bf8c-f0d3d44af5a7")
 	)
 	(no_connect
-		(at 148.59 77.47)
-		(uuid "e66cf01a-c6bf-405e-a8d6-f838145e1e47")
-	)
-	(no_connect
 		(at 148.59 80.01)
 		(uuid "f0bb7488-ed12-45c2-9a35-0a36d182b6d0")
 	)
 	(no_connect
 		(at 130.81 39.37)
 		(uuid "f7df8653-0093-47dc-8b6b-baf77527557d")
+	)
+	(wire
+		(pts
+			(xy 154.94 77.47) (xy 154.94 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0cf32cf9-c737-4538-a4d6-3fc36b762151")
+	)
+	(wire
+		(pts
+			(xy 154.94 72.39) (xy 158.75 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a83146c2-bad5-440f-86ff-320a61a5601f")
+	)
+	(wire
+		(pts
+			(xy 148.59 77.47) (xy 154.94 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b4192f1c-33e2-4ed6-b212-fa80497e4682")
 	)
 	(label "R4"
 		(at 102.87 113.03 0)
@@ -2039,6 +2065,62 @@
 			(project "65ROL-PCB"
 				(path "/346f8378-20cc-482f-b93f-6d5e3bddbc25"
 					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 158.75 69.85)
+		(size 12.7 5.08)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "dfa2ef10-f05f-49b3-9a80-994b3435f560")
+		(property "Sheetname" "Board LEDs"
+			(at 158.75 69.1384 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "BoardLEDs.kicad_sch"
+			(at 158.75 75.5146 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "LEDs" input
+			(at 158.75 72.39 180)
+			(uuid "1d9d9b9f-18f7-4c67-91b3-cd104fbe7451")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "65ROL-PCB"
+				(path "/346f8378-20cc-482f-b93f-6d5e3bddbc25"
+					(page "3")
 				)
 			)
 		)

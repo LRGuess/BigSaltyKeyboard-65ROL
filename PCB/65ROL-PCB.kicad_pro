@@ -76,7 +76,24 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "lib_footprint_mismatch|-2462500|26710000|68981675-634c-4a93-8fe7-babac08b748f|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "silk_edge_clearance|-18060000|22810000|9d5d595c-b2a1-4587-8fe9-9ee880abca16|d439a3f6-c738-4917-8b61-e7781223a3a0",
+          ""
+        ],
+        [
+          "silk_edge_clearance|-18060000|30610000|9d5d595c-b2a1-4587-8fe9-9ee880abca16|97636862-6d9a-41e8-b51d-2df175255912",
+          ""
+        ],
+        [
+          "starved_thermal|-11936265|36336265|8bb21878-50cb-48ba-8c95-e2593e815ff2|d4389988-936f-43c1-b358-57717bda1ec4|F.Cu",
+          ""
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -148,7 +165,7 @@
         "max_error": 0.005,
         "min_clearance": 0.0,
         "min_connection": 0.0,
-        "min_copper_edge_clearance": 0.5,
+        "min_copper_edge_clearance": 0.0,
         "min_groove_width": 0.0,
         "min_hole_clearance": 0.25,
         "min_hole_to_hole": 0.25,
@@ -274,7 +291,20 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [],
+    "erc_exclusions": [
+      [
+        "lib_symbol_mismatch|2171700|927100|33a0ab2a-0c70-45f9-9c4e-57f90a6d911c|00000000-0000-0000-0000-000000000000|||",
+        ""
+      ],
+      [
+        "lib_symbol_mismatch|2209800|546100|9c4a6299-feaa-4861-93e1-2cd25694bf83|00000000-0000-0000-0000-000000000000|||",
+        ""
+      ],
+      [
+        "unannotated|1943100|723900|cc5bec74-80a3-4fc0-85e0-d60ac68c380c|00000000-0000-0000-0000-000000000000|||",
+        ""
+      ]
+    ],
     "meta": {
       "version": 0
     },
@@ -662,7 +692,7 @@
         "uuid": "346f8378-20cc-482f-b93f-6d5e3bddbc25"
       }
     ],
-    "used_designators": "STABSPACE1,STAB1,STABLSHIFT1",
+    "used_designators": "",
     "variants": []
   },
   "sheets": [
@@ -673,6 +703,10 @@
     [
       "7cd94ad4-04e7-44d1-8cbb-e5adeed827a5",
       "Board Keys"
+    ],
+    [
+      "dfa2ef10-f05f-49b3-9a80-994b3435f560",
+      "Board LEDs"
     ]
   ],
   "text_variables": {},
