@@ -53,3 +53,22 @@ Next Up:
      alt="Devlog3 Image"
      width="600"
      height="500"> 
+
+### Devlog 4: 7 hours
+Oh boy this one was fun. I really want my keyboard to have LEDs under each key, overall I think it adds a lot of character and improves the overall look of the board. Also they're lowkey aura.  
+First thing's first I created a schematic in KiCad and mapped out the routes the data lines were going to take. To make routing a lot easier, I decided that every 2nd row of LEDs are going to be turned upside down, making the data line not have to cross the entire board to start a new row of LEDs. This bit was easy enough and after assigning all the footprints I got to work routing. Now I have routed LEDs in the past, and the process of placing the LEDs got a bit repetitive, so we'll skip to the start of the problems.  
+After I finished routing the LEDs I tried to preform a DRC. For some ungodly reason 9/10 times I tried KiCad would crash, never giving me the results. Now I can't really skip over this because there is no way I made a perfect board, so for a few hours it was literally just brute forcing KiCad until it decided to give me the DRC results. At the end of the day it was not too bad as all I had to do was add some vias to allow all the ground fill islands to connect to each other and provide thermal relief. 
+
+Next Up:
+1. Create 2nd Schematic for rear extention
+2. Figure out how to connect the 2nd PCB to the Pico
+
+
+<img src="https://github.com/LRGuess/BigSaltyKeyboard-65ROL/blob/main/Photos/Devlog4-LEDsSchem.png" 
+     alt="Devlog3 Image"
+     width="600"
+     height="500"> 
+<img src="https://github.com/LRGuess/BigSaltyKeyboard-65ROL/blob/main/Photos/Devlog4-LEDsBoard.png" 
+     alt="Devlog3 Image"
+     width="600"
+     height="500"> 
