@@ -2,6 +2,18 @@
 A 65% Keyboard with a rotary encoder, OLED screen and LEDs
 
 
+## BOM:
+
+- 1x Raspberry Pi Pico
+- 68x Cheery MX Switches and their keycaps
+- 68x [1N4148 Through-Hole Diodes](https://www.digikey.ca/en/products/detail/onsemi/1N4148/458603)
+- 1x 6.25u Stabilizer
+- 2x 2.25u Stabilizer
+- 1x 2u Stabilizer
+- 68x [SK6812 MINI-E LEDs](https://www.lcsc.com/product-detail/C5149201.html)
+- 1x [Logic Level Shifter](https://www.digikey.ca/en/products/detail/texas-instruments/SN74AHCT1G125DBVR/376028)
+- 69x [0.1 µF Chip Capacitor](www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL10E104KC8VPNC/20498486- 1x [500 OHM Chip Resistor](https://www.digikey.ca/en/products/detail/yageo/RT0603BRC07500RL/7708292)
+
 ## Journal
 You can visit the `./Photos` folder to find pictures related to each devlog!  
 ### Devlog 1: 3 hours
@@ -69,6 +81,23 @@ Next Up:
      width="600"
      height="500"> 
 <img src="https://github.com/LRGuess/BigSaltyKeyboard-65ROL/blob/main/Photos/Devlog4-LEDsBoard.png" 
+     alt="Devlog3 Image"
+     width="600"
+     height="500"> 
+
+### Devlog 5: 2 Hours
+I recently shared my keyboard design with the community, and I got a few comments about the LEDs. There were a few changes I needed to make to ensure the LEDs would work properly:
+1. Every LED needs a decoupling capacitor to prevent high frequency noise from messing with the LEDs.
+2. The LEDs data lines read HIGH from a 5v pin, but the Pico's data lines are 3.3v. Due to this I needed to insert a logic-level shifter between the Pico and the first LED.
+3. After the Logic Level shifter it is also recommended to insert a 500OHM resistor on the data line.
+
+After about an hour of research I figured out what components to use and placed them all on the schematic!
+
+Next Up:
+1. Place all new components on PCB
+2. 2nd PCB
+
+<img src="https://github.com/LRGuess/BigSaltyKeyboard-65ROL/blob/main/Photos/Devlog5.png" 
      alt="Devlog3 Image"
      width="600"
      height="500"> 
