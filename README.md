@@ -12,7 +12,7 @@ A 65% Keyboard with a rotary encoder, OLED screen and LEDs
 - 1x 2u Stabilizer
 - 68x [SK6812 MINI-E LEDs](https://www.lcsc.com/product-detail/C5149201.html)
 - 1x [Logic Level Shifter](https://www.digikey.ca/en/products/detail/texas-instruments/SN74AHCT1G125DBVR/376028)
-- 69x [0.1 µF Chip Capacitor](www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL10E104KC8VPNC/20498486)
+- 69x [0.1 µF Chip Capacitor](https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL10E104KC8VPNC/20498486)
 - 1x [500 OHM Chip Resistor](https://www.digikey.ca/en/products/detail/yageo/RT0603BRC07500RL/7708292)
 
 ## Journal
