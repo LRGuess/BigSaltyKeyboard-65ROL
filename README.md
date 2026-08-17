@@ -12,12 +12,12 @@ A 65% Keyboard with a rotary encoder, OLED screen and LEDs
 - 1x 2u Stabilizer
 - 68x [SK6812 MINI-E LEDs](https://www.lcsc.com/product-detail/C5149201.html)
 - 1x [Logic Level Shifter](https://www.digikey.ca/en/products/detail/texas-instruments/SN74AHCT1G125DBVR/376028)
-- 69x [0.1 µF Chip Capacitor](https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL10E104KC8VPNC/20498486)
+- 69x [0.1 µF Chip Capacitor](https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL05B104KP5VPNC/20498482)
 - 1x [500 OHM Chip Resistor](https://www.digikey.ca/en/products/detail/yageo/RT0603BRC07500RL/7708292)
 
 ## Journal
 You can visit the `./Photos` folder to find pictures related to each devlog!  
-### Devlog 1: 3 hours
+### Jul 25, Devlog 1: 3 hours
 Behold, the start of the project!
 I do not have much experiance making keyboards but have been thinking of building one for a lil bit now, and once I came across Keeb it seemed like a great opportunity!  
 I kicked this project off with a bit of planning and I present to you the overview of my custom keyboard:  
@@ -40,7 +40,7 @@ Next Up:
      width="600"
      height="500"> 
 
-### Devlog 2: 3 hours
+### Jul 26, Devlog 2: 3 hours
 After having finished the key's schematic layout for the base PCB I dedcided the next step was to lay the keys out on the PCB! My current keyboard is an ATK RS6, and I'm quite used to it's layout and spacing so I decided I would replicate it with a small tweak: I made the left control key just a little bit larger so that I don't have to extend my thumb as far as I do on my current one. Honestly, spacing the keys out was kinda hard but it was a great learning opportunity, and figuring out how to place the stabalizers was also fun to figure out.  
 Something I did to help figure the proper spacing out was downloading the CAD for an MX key and a keycap for the switch footprint so I could visualize the spacing in the 3D tool! At first I got the switch CAD to import no problem, but as soon as I tried to import the keycap it wouldn't show up. Long story short, for some ungodly reason KiCAD didn't like the keycap's CAD to be in an STL format but after a conversion to STP everything went smoothly. 
 
@@ -53,7 +53,7 @@ Next Up:
      width="600"
      height="500"> 
 
-### Devlog 3: 4 hours
+### Jul 26, Devlog 3: 4 hours
 Right off the bat this part took a lot longer than I thought it would. Manually trying to drag every single diode to the right position was an absolute nightmare they're so small it's literally aim trainging of some sorts. Holy cow. 
 Anyways, after placing every diode I decided to place the Pico right above the entire structure. Yes this adds a lot of space but that space will be right under the extention and I do need a spot to place the connectors to the other PDB. I'll get into that more in the next devlog.
 The last thing I did was define the board's outlines and add a ground fill. I'm leaving about 2.4mm of space between the edge of the board and the switches, which I think will be enough for a sandwitch fit case. Running the DRC nothing failed so all is well with the board for now!
@@ -67,7 +67,7 @@ Next Up:
      width="600"
      height="500"> 
 
-### Devlog 4: 7 hours
+### Aug 4, Devlog 4: 7 hours
 Oh boy this one was fun. I really want my keyboard to have LEDs under each key, overall I think it adds a lot of character and improves the overall look of the board. Also they're lowkey aura.  
 First thing's first I created a schematic in KiCad and mapped out the routes the data lines were going to take. To make routing a lot easier, I decided that every 2nd row of LEDs are going to be turned upside down, making the data line not have to cross the entire board to start a new row of LEDs. This bit was easy enough and after assigning all the footprints I got to work routing. Now I have routed LEDs in the past, and the process of placing the LEDs got a bit repetitive, so we'll skip to the start of the problems.  
 After I finished routing the LEDs I tried to preform a DRC. For some ungodly reason 9/10 times I tried KiCad would crash, never giving me the results. Now I can't really skip over this because there is no way I made a perfect board, so for a few hours it was literally just brute forcing KiCad until it decided to give me the DRC results. At the end of the day it was not too bad as all I had to do was add some vias to allow all the ground fill islands to connect to each other and provide thermal relief. 
@@ -78,15 +78,15 @@ Next Up:
 
 
 <img src="https://github.com/LRGuess/BigSaltyKeyboard-65ROL/blob/main/Photos/Devlog4-LEDsSchem.png" 
-     alt="Devlog3 Image"
+     alt="Devlog4 Image"
      width="600"
      height="500"> 
 <img src="https://github.com/LRGuess/BigSaltyKeyboard-65ROL/blob/main/Photos/Devlog4-LEDsBoard.png" 
-     alt="Devlog3 Image"
+     alt="Devlog4 Image"
      width="600"
      height="500"> 
 
-### Devlog 5: 2 Hours
+### Aug 15, Devlog 5: 2 Hours
 I recently shared my keyboard design with the community, and I got a few comments about the LEDs. There were a few changes I needed to make to ensure the LEDs would work properly:
 1. Every LED needs a decoupling capacitor to prevent high frequency noise from messing with the LEDs.
 2. The LEDs data lines read HIGH from a 5v pin, but the Pico's data lines are 3.3v. Due to this I needed to insert a logic-level shifter between the Pico and the first LED.
@@ -99,6 +99,19 @@ Next Up:
 2. 2nd PCB
 
 <img src="https://github.com/LRGuess/BigSaltyKeyboard-65ROL/blob/main/Photos/Devlog5.png" 
-     alt="Devlog3 Image"
+     alt="Devlog5 Image"
+     width="600"
+     height="500"> 
+
+### Aug 17, Devlog 6: 3 Hours
+In the previous DevLog I spoke about how I needed to add new components for the LEDs. In this one all I did was place each component on the PCB. This process was quite repetitive and it was a bit hard to figure out how to orient every capacitor to fit nicely, but I figured it out and every capacitor got spaced evenly. The only issue I ran into were isolated GND islands, but I was able to solve that by adding a few dozen vias and allowing all the fill zones to connect to each other!
+
+Next Up:
+1. Talk about 2nd PCB
+2. Schematic for 2nd PCB
+3. Make 2nd PCB
+
+<img src="https://github.com/LRGuess/BigSaltyKeyboard-65ROL/blob/main/Photos/Devlog6.png" 
+     alt="Devlog6 Image"
      width="600"
      height="500"> 
