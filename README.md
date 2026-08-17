@@ -2,6 +2,19 @@
 A 65% Keyboard with a rotary encoder, OLED screen and LEDs
 
 
+## BOM:
+
+- 1x Raspberry Pi Pico
+- 68x Cheery MX Switches and their keycaps
+- 68x [1N4148 Through-Hole Diodes](https://www.digikey.ca/en/products/detail/onsemi/1N4148/458603)
+- 1x 6.25u Stabilizer
+- 2x 2.25u Stabilizer
+- 1x 2u Stabilizer
+- 68x [SK6812 MINI-E LEDs](https://www.lcsc.com/product-detail/C5149201.html)
+- 1x [Logic Level Shifter](https://www.digikey.ca/en/products/detail/texas-instruments/SN74AHCT1G125DBVR/376028)
+- 69x [0.1 µF Chip Capacitor](https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL10E104KC8VPNC/20498486)
+- 1x [500 OHM Chip Resistor](https://www.digikey.ca/en/products/detail/yageo/RT0603BRC07500RL/7708292)
+
 ## Journal
 You can visit the `./Photos` folder to find pictures related to each devlog!  
 ### Devlog 1: 3 hours
@@ -50,6 +63,42 @@ Next Up:
 2. Plan 2nd board connection
 
 <img src="https://github.com/LRGuess/BigSaltyKeyboard-65ROL/blob/main/Photos/Devlog3-Board.png" 
+     alt="Devlog3 Image"
+     width="600"
+     height="500"> 
+
+### Devlog 4: 7 hours
+Oh boy this one was fun. I really want my keyboard to have LEDs under each key, overall I think it adds a lot of character and improves the overall look of the board. Also they're lowkey aura.  
+First thing's first I created a schematic in KiCad and mapped out the routes the data lines were going to take. To make routing a lot easier, I decided that every 2nd row of LEDs are going to be turned upside down, making the data line not have to cross the entire board to start a new row of LEDs. This bit was easy enough and after assigning all the footprints I got to work routing. Now I have routed LEDs in the past, and the process of placing the LEDs got a bit repetitive, so we'll skip to the start of the problems.  
+After I finished routing the LEDs I tried to preform a DRC. For some ungodly reason 9/10 times I tried KiCad would crash, never giving me the results. Now I can't really skip over this because there is no way I made a perfect board, so for a few hours it was literally just brute forcing KiCad until it decided to give me the DRC results. At the end of the day it was not too bad as all I had to do was add some vias to allow all the ground fill islands to connect to each other and provide thermal relief. 
+
+Next Up:
+1. Create 2nd Schematic for rear extention
+2. Figure out how to connect the 2nd PCB to the Pico
+
+
+<img src="https://github.com/LRGuess/BigSaltyKeyboard-65ROL/blob/main/Photos/Devlog4-LEDsSchem.png" 
+     alt="Devlog3 Image"
+     width="600"
+     height="500"> 
+<img src="https://github.com/LRGuess/BigSaltyKeyboard-65ROL/blob/main/Photos/Devlog4-LEDsBoard.png" 
+     alt="Devlog3 Image"
+     width="600"
+     height="500"> 
+
+### Devlog 5: 2 Hours
+I recently shared my keyboard design with the community, and I got a few comments about the LEDs. There were a few changes I needed to make to ensure the LEDs would work properly:
+1. Every LED needs a decoupling capacitor to prevent high frequency noise from messing with the LEDs.
+2. The LEDs data lines read HIGH from a 5v pin, but the Pico's data lines are 3.3v. Due to this I needed to insert a logic-level shifter between the Pico and the first LED.
+3. After the Logic Level shifter it is also recommended to insert a 500OHM resistor on the data line.
+
+After about an hour of research I figured out what components to use and placed them all on the schematic!
+
+Next Up:
+1. Place all new components on PCB
+2. 2nd PCB
+
+<img src="https://github.com/LRGuess/BigSaltyKeyboard-65ROL/blob/main/Photos/Devlog5.png" 
      alt="Devlog3 Image"
      width="600"
      height="500"> 
