@@ -14,6 +14,7 @@ A 65% Keyboard with a rotary encoder, OLED screen and LEDs
 - 1x [Logic Level Shifter](https://www.digikey.ca/en/products/detail/texas-instruments/SN74AHCT1G125DBVR/376028)
 - 69x [0.1 µF Chip Capacitor](https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL05B104KP5VPNC/20498482)
 - 1x [500 OHM Chip Resistor](https://www.digikey.ca/en/products/detail/yageo/RT0603BRC07500RL/7708292)
+- 2x [10 Pin Horizontal Header](https://www.digikey.ca/en/products/detail/w%C3%BCrth-elektronik/61301011021/2508443)
 
 ## Journal
 You can visit the `./Photos` folder to find pictures related to each devlog!  
@@ -113,5 +114,18 @@ Next Up:
 
 <img src="https://github.com/LRGuess/BigSaltyKeyboard-65ROL/blob/main/Photos/Devlog6.png" 
      alt="Devlog6 Image"
+     width="600"
+     height="500"> 
+
+### Aug 17, Devlog 7: 2 Hours
+The biggest detail about this keyboard is the rear extension that will come up on the back. I want this extension to have the following details:
+1. A Rotary Encoder sticking out the side for volume control
+2. OLED screen for funny graphics
+
+In theory I would like to have more features but I have very little ports left on the Pico, and I don't mind missing out on a few buttons. 
+To connect each PCB to the other I will simply put a 10 Pin header on each PCB and run jumper wires! I finished the simple schematic for the 2nd PCB, next I need to figure out how to design a 2nd PCB in KiCAD!
+
+<img src="https://github.com/LRGuess/BigSaltyKeyboard-65ROL/blob/main/Photos/Devlog7.png" 
+     alt="Devlog7 Image"
      width="600"
      height="500"> 
