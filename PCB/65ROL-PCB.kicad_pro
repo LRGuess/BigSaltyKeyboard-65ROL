@@ -78,6 +78,78 @@
       ],
       "drc_exclusions": [
         [
+          "clearance|-125225000|40300000|45036770-1a5e-45b8-af27-fbc8e21b7ab9|42cc4019-7f96-4811-a38c-b8abb8642572",
+          ""
+        ],
+        [
+          "clearance|-125225000|41375000|42cc4019-7f96-4811-a38c-b8abb8642572|7a656481-65a3-465c-93d0-b423952141a6",
+          ""
+        ],
+        [
+          "clearance|-125225000|42375000|7a656481-65a3-465c-93d0-b423952141a6|7b06e2a5-4a89-46cb-8845-b3490f9b0b0c",
+          ""
+        ],
+        [
+          "clearance|-125225000|43375000|7b06e2a5-4a89-46cb-8845-b3490f9b0b0c|c9c94cb6-f732-4e69-8166-6448f654ba50",
+          ""
+        ],
+        [
+          "clearance|-125225000|44375000|c9c94cb6-f732-4e69-8166-6448f654ba50|8980c57c-b0d2-4da4-9714-1ecac7f46a0a",
+          ""
+        ],
+        [
+          "clearance|-125225000|45375000|8980c57c-b0d2-4da4-9714-1ecac7f46a0a|0d9b40ff-ee84-4e94-aa46-eb638eb77f36",
+          ""
+        ],
+        [
+          "clearance|-125225000|46375000|0d9b40ff-ee84-4e94-aa46-eb638eb77f36|7230cd28-1d9b-4f97-b02a-b3f23a7c262b",
+          ""
+        ],
+        [
+          "clearance|-125225000|47375000|7230cd28-1d9b-4f97-b02a-b3f23a7c262b|bf0cb96b-9310-4f79-aade-f9b219866133",
+          ""
+        ],
+        [
+          "clearance|-125225000|48375000|bf0cb96b-9310-4f79-aade-f9b219866133|a76ce4f6-9373-4e98-9e44-5c630ef966fc",
+          ""
+        ],
+        [
+          "clearance|42425000|21925000|7fba4bea-2b93-4110-a0dd-61049af0ad87|b530b8d6-ae4b-4f3c-b73b-f63e62beb181",
+          ""
+        ],
+        [
+          "clearance|42425000|23000000|b530b8d6-ae4b-4f3c-b73b-f63e62beb181|6311df4e-ba3e-4ade-878c-57e7fc782352",
+          ""
+        ],
+        [
+          "clearance|42425000|24000000|6311df4e-ba3e-4ade-878c-57e7fc782352|3c7192e3-18ba-406a-a1b1-325b92bf7f05",
+          ""
+        ],
+        [
+          "clearance|42425000|25000000|3c7192e3-18ba-406a-a1b1-325b92bf7f05|8160672f-dad0-4705-8128-84e97e01a3ce",
+          ""
+        ],
+        [
+          "clearance|42425000|26000000|8160672f-dad0-4705-8128-84e97e01a3ce|e74affb8-bd49-4c7f-9015-763ec4963857",
+          ""
+        ],
+        [
+          "clearance|42425000|27000000|e74affb8-bd49-4c7f-9015-763ec4963857|001d4ea1-1cd6-47ad-bd48-e23067c904af",
+          ""
+        ],
+        [
+          "clearance|42425000|28000000|001d4ea1-1cd6-47ad-bd48-e23067c904af|f4f4c831-3d8a-4a3e-8a0c-3714a53078a8",
+          ""
+        ],
+        [
+          "clearance|42425000|29000000|f4f4c831-3d8a-4a3e-8a0c-3714a53078a8|19b84425-4a34-4ff0-8d14-0c958080c09f",
+          ""
+        ],
+        [
+          "clearance|42425000|30000000|19b84425-4a34-4ff0-8d14-0c958080c09f|d74763af-b9f2-4ddd-a1ae-eb0b608ff036",
+          ""
+        ],
+        [
           "lib_footprint_mismatch|-2462500|26710000|68981675-634c-4a93-8fe7-babac08b748f|00000000-0000-0000-0000-000000000000",
           ""
         ],
@@ -90,7 +162,15 @@
           ""
         ],
         [
-          "starved_thermal|-11936265|36336265|8bb21878-50cb-48ba-8c95-e2593e815ff2|d4389988-936f-43c1-b358-57717bda1ec4|F.Cu",
+          "starved_thermal|-10319496|34719496|8bb21878-50cb-48ba-8c95-e2593e815ff2|d4389988-936f-43c1-b358-57717bda1ec4|B.Cu",
+          ""
+        ],
+        [
+          "starved_thermal|-12800000|39840000|8bb21878-50cb-48ba-8c95-e2593e815ff2|7c059e9e-46b4-4678-8bf8-28c5a63bc7fb|B.Cu",
+          ""
+        ],
+        [
+          "starved_thermal|-14100000|39840000|8bb21878-50cb-48ba-8c95-e2593e815ff2|c2b371c6-9cec-4683-98cb-57dc8cdbbeb8|B.Cu",
           ""
         ]
       ],
@@ -583,13 +663,13 @@
     "bom_export_filename": "${PROJECTNAME}.csv",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
-      "field_delimiter": ",",
+      "field_delimiter": "\t",
       "keep_line_breaks": false,
       "keep_tabs": false,
-      "name": "CSV",
+      "name": "TSV",
       "ref_delimiter": ",",
       "ref_range_delimiter": "",
-      "string_delimiter": "\""
+      "string_delimiter": ""
     },
     "bom_presets": [],
     "bom_settings": {
@@ -642,12 +722,42 @@
           "label": "Datasheet",
           "name": "Datasheet",
           "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Pins",
+          "name": "Sim.Pins",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Device",
+          "name": "Sim.Device",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Description",
+          "name": "Description",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "#",
+          "name": "${ITEM_NUMBER}",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Exclude from Simulation",
+          "name": "${EXCLUDE_FROM_SIM}",
+          "show": false
         }
       ],
       "filter_string": "",
       "group_symbols": true,
       "include_excluded_from_bom": true,
-      "name": "Default Editing",
+      "name": "",
       "sort_asc": true,
       "sort_field": "Reference"
     },
@@ -707,6 +817,10 @@
     [
       "dfa2ef10-f05f-49b3-9a80-994b3435f560",
       "Board LEDs"
+    ],
+    [
+      "85e26aa2-2de1-44cb-972a-afd9ca6a3c4b",
+      "RearExtension"
     ]
   ],
   "text_variables": {},
