@@ -1292,7 +1292,7 @@
 	)
 	(global_label "OLED SDA"
 		(shape input)
-		(at 108.585 99.06 0)
+		(at 108.585 96.52 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1302,7 +1302,7 @@
 		)
 		(uuid "12251b1f-5eb7-4308-9ac0-425492c7b253")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 120.8835 99.06 0)
+			(at 120.8835 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1364,7 +1364,7 @@
 	)
 	(global_label "Rotary Switch"
 		(shape input)
-		(at 108.585 93.98 0)
+		(at 108.585 88.9 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1374,7 +1374,7 @@
 		)
 		(uuid "56fa8782-40e1-4893-9c69-17d43d6c3f19")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 124.6934 93.98 0)
+			(at 124.6934 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1412,7 +1412,7 @@
 	)
 	(global_label "OLED SCL"
 		(shape input)
-		(at 108.585 96.52 0)
+		(at 108.585 99.06 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1422,7 +1422,7 @@
 		)
 		(uuid "9a241cda-832c-4259-8fd7-ccc47c7090e1")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 120.823 96.52 0)
+			(at 120.823 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1460,7 +1460,7 @@
 	)
 	(global_label "Rotary A"
 		(shape input)
-		(at 108.585 88.9 0)
+		(at 108.585 93.98 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1470,7 +1470,7 @@
 		)
 		(uuid "f5695ca9-3972-4b39-82ba-e73d621f2494")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 119.6739 88.9 0)
+			(at 119.6739 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
