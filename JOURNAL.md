@@ -107,7 +107,11 @@ The biggest detail about this keyboard is the rear extension that will come up o
 In theory I would like to have more features but I have very little ports left on the Pico, and I don't mind missing out on a few buttons. 
 To connect each PCB to the other I will simply put a 10 Pin header on each PCB and run jumper wires! I finished the simple schematic for the 2nd PCB, next I need to figure out how to design a 2nd PCB in KiCAD!
 
-<img src="https://github.com/LRGuess/BigSaltyKeyboard-65ROL/blob/main/Photos/Devlog7.png" 
+### Aug 20th, Devlog 8: 1 Hour
+Today I routed the PCB for the Rear Extension and imported 3D models to later import it into Fusion 360 for case design. To make the design simpler I made the front fill zone take charge of the VBUS net and the rear one be the ground zone. 
+That's all for today, See you guys tomorrow!
+
+<img src="https://github.com/LRGuess/BigSaltyKeyboard-65ROL/blob/main/Photos/Devlog8.png" 
      alt="Devlog7 Image"
      width="600"
      height="500"> 
